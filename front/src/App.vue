@@ -19,7 +19,7 @@ const buscarOperadoras = async () => {
   timeout = setTimeout(() => {
     carregando.value = true;
     fetch(
-      `http://localhost:5005/api/buscar?termo=${encodeURIComponent(
+      `https://api.tvmax.app/api/buscar?termo=${encodeURIComponent(
         termoBusca.value
       )}&limite=20`
     )

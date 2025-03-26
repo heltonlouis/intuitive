@@ -1,3 +1,10 @@
+crie um ambiente virtual:
+```bash
+python3 -m venv venv
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
 para rodar o web scraping:
 
 ```bash
