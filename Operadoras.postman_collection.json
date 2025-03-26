@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "3d459079-827e-49c4-84a2-a44c8b84089f",
+		"name": "Operadoras",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31544153"
+	},
+	"item": [
+		{
+			"name": "Busca Básica",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{base_url}}/api/buscar?termo=saude&limite=5",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "saude"
+						},
+						{
+							"key": "limite",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca por Nome Fantasia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/buscar?termo=Amil&limite=3",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "Amil"
+						},
+						{
+							"key": "limite",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca por Cidade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/buscar?termo=São Paulo&limite=10",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "São Paulo"
+						},
+						{
+							"key": "limite",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca por Estado",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/buscar?termo=MG&limite=5",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "MG"
+						},
+						{
+							"key": "limite",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Busca Vazia",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/api/buscar?termo=",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"api",
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
